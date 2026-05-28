@@ -1,89 +1,210 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio cá nhân của Khuong - Full Stack Developer & Creative Designer">
-    <title>Khuong | Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hương Vị Việt - Khám phá tinh hoa ẩm thực Việt Nam qua những món ăn truyền thống đậm đà bản sắc.">
+  <title>Hương Vị Việt | Ẩm Thực Truyền Thống Việt Nam</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Animated Blobs Background -->
-    <div class="bg-blobs">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">Hương Vị <span>Việt</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#menu">Thực đơn</a></li>
+        <li><a href="#features">Đặc trưng</a></li>
+        <li><a href="#review">Cảm nhận</a></li>
+        <li><a href="#cta">Đặt bàn</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <header>
-        <div class="container hero">
-            <div class="fade-in">
-                <h1>Chào, mình là Khuong</h1>
-                <p id="typewriter"></p>
-                <a href="#about" class="btn btn-primary">Khám phá ngay</a>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="hero.png" alt="Ẩm thực Việt Nam truyền thống">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🍜 Ẩm thực truyền thống</div>
+      <h1>Tinh Hoa <span class="highlight">Ẩm Thực</span> Việt Nam</h1>
+      <p>Mỗi món ăn là một câu chuyện, mỗi hương vị là một ký ức. Hãy cùng khám phá nền ẩm thực phong phú và đa dạng của Việt Nam.</p>
+      <a href="#menu" class="hero-btn">Khám Phá Thực Đơn →</a>
+    </div>
+    <div class="scroll-indicator">
+      <span>Cuộn xuống</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h3>Câu Chuyện <span>Ẩm Thực</span> Việt</h3>
+          <p>Ẩm thực Việt Nam được UNESCO công nhận là một trong những nền ẩm thực đa dạng và hấp dẫn nhất thế giới. Với sự kết hợp tinh tế giữa ngũ vị — chua, cay, mặn, ngọt, đắng — mỗi món ăn Việt đều là một tác phẩm nghệ thuật.</p>
+          <p>Từ tô phở nóng hổi buổi sáng Hà Nội, ổ bánh mì giòn rụm trên phố Sài Gòn, đến bát bún bò cay nồng xứ Huế — mỗi vùng miền đều mang một hương vị riêng biệt, tạo nên bản sắc ẩm thực độc đáo.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-number" data-count="3">0</div>
+              <div class="stat-label">Miền ẩm thực</div>
             </div>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="container">
-        <h2 class="section-title">Về mình</h2>
-        <div class="glass-card">
-            <p>Mình là một nhà phát triển đam mê tạo ra các trải nghiệm kỹ thuật số tuyệt đẹp. Với sự tập trung vào hiệu năng và thẩm mỹ, mình luôn nỗ lực biến những ý tưởng phức tạp thành các giải pháp đơn giản và thanh lịch.</p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="container">
-        <h2 class="section-title">Kỹ năng</h2>
-        <div class="grid">
-            <div class="glass-card">
-                <h3>Frontend</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">HTML5</span>
-                    <span class="skill-tag">CSS3</span>
-                    <span class="skill-tag">Javascript</span>
-                    <span class="skill-tag">React</span>
-                </div>
+            <div class="stat">
+              <div class="stat-number" data-count="500">0</div>
+              <div class="stat-label">Món ăn đặc sản</div>
             </div>
-            <div class="glass-card">
-                <h3>Backend</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">Express</span>
-                    <span class="skill-tag">MongoDB</span>
-                    <span class="skill-tag">Python</span>
-                </div>
+            <div class="stat">
+              <div class="stat-number" data-count="54">0</div>
+              <div class="stat-label">Dân tộc góp vị</div>
             </div>
-            <div class="glass-card">
-                <h3>Design</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">UI/UX</span>
-                    <span class="skill-tag">Figma</span>
-                    <span class="skill-tag">Motion</span>
-                </div>
+          </div>
+        </div>
+        <div class="about-image reveal">
+          <img src="springrolls.png" alt="Gỏi cuốn tôm thịt">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Thực đơn đặc biệt</div>
+        <h2 class="section-title">Món Ăn Tiêu Biểu</h2>
+        <p class="section-desc">Những tinh hoa ẩm thực đã làm nên tên tuổi Việt Nam trên bản đồ ẩm thực thế giới.</p>
+      </div>
+      <div class="menu-grid">
+        <!-- Card 1 - Phở -->
+        <div class="menu-card reveal">
+          <div class="menu-card-img">
+            <img src="pho.png" alt="Phở Bò truyền thống">
+            <div class="price-tag">65.000đ</div>
+          </div>
+          <div class="menu-card-body">
+            <h3>Phở Bò Hà Nội</h3>
+            <p>Nước dùng trong veo, ninh từ xương bò 12 tiếng với quế, hồi, thảo quả. Bánh phở mềm dai, thịt bò tái chín thơm ngọt.</p>
+            <div class="menu-tags">
+              <span class="menu-tag">🔥 Nóng</span>
+              <span class="menu-tag">Miền Bắc</span>
+              <span class="menu-tag">Đặc sản</span>
             </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container">
-        <h2 class="section-title">Kết nối</h2>
-        <div class="glass-card" style="text-align: center;">
-            <p style="margin-bottom: 2rem;">Bạn có dự án thú vị? Đừng ngần ngại liên hệ nhé!</p>
-            <div class="social-links">
-                <a href="#" class="btn btn-primary" style="margin-right: 1rem;">Email</a>
-                <a href="#" class="btn btn-primary">LinkedIn</a>
+        <!-- Card 2 - Bánh mì -->
+        <div class="menu-card reveal">
+          <div class="menu-card-img">
+            <img src="banhmi.png" alt="Bánh mì Việt Nam">
+            <div class="price-tag">35.000đ</div>
+          </div>
+          <div class="menu-card-body">
+            <h3>Bánh Mì Sài Gòn</h3>
+            <p>Vỏ bánh giòn tan, nhân thịt nướng, pate, đồ chua, rau thơm, ớt. Sự kết hợp hoàn hảo giữa ẩm thực Pháp-Việt.</p>
+            <div class="menu-tags">
+              <span class="menu-tag">🥖 Giòn</span>
+              <span class="menu-tag">Miền Nam</span>
+              <span class="menu-tag">Top 1 thế giới</span>
             </div>
+          </div>
         </div>
-    </section>
-
-    <footer>
-        <div class="container" style="text-align: center; padding: 40px 0; color: var(--text-muted);">
-            <p>© 2026 Khuong. Thiết kế với 💎 và ☕.</p>
+        <!-- Card 3 - Gỏi cuốn -->
+        <div class="menu-card reveal">
+          <div class="menu-card-img">
+            <img src="springrolls.png" alt="Gỏi cuốn tôm thịt">
+            <div class="price-tag">45.000đ</div>
+          </div>
+          <div class="menu-card-body">
+            <h3>Gỏi Cuốn Tôm Thịt</h3>
+            <p>Tôm tươi, thịt heo luộc, bún, rau sống cuộn trong lớp bánh tráng mỏng. Chấm cùng tương đậu phộng béo ngậy.</p>
+            <div class="menu-tags">
+              <span class="menu-tag">🥬 Tươi mát</span>
+              <span class="menu-tag">Healthy</span>
+              <span class="menu-tag">Đặc sản</span>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Tại sao đặc biệt?</div>
+        <h2 class="section-title">Đặc Trưng Ẩm Thực Việt</h2>
+        <p class="section-desc">Những yếu tố làm nên sự khác biệt của nền ẩm thực Việt Nam so với thế giới.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <span class="feature-icon">🌿</span>
+          <h4>Nguyên Liệu Tươi</h4>
+          <p>Rau thơm, gia vị tươi sống luôn hiện diện trong mọi bữa ăn Việt.</p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">⚖️</span>
+          <h4>Cân Bằng Ngũ Vị</h4>
+          <p>Chua, cay, mặn, ngọt, đắng hòa quyện tạo nên hương vị hoàn hảo.</p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">🎨</span>
+          <h4>Sắc Màu Bắt Mắt</h4>
+          <p>Mỗi món ăn đều được trình bày đẹp mắt với màu sắc tự nhiên.</p>
+        </div>
+        <div class="feature-card reveal">
+          <span class="feature-icon">❤️</span>
+          <h4>Nấu Bằng Tình Yêu</h4>
+          <p>Công thức gia truyền qua bao thế hệ, giữ trọn hương vị quê nhà.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section id="review">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Cảm nhận</div>
+        <h2 class="section-title">Khách Hàng Nói Gì</h2>
+      </div>
+      <div class="testimonial-card reveal">
+        <p class="quote">Ẩm thực Việt Nam không chỉ là đồ ăn, đó là văn hóa, là lịch sử, là tình yêu được truyền từ thế hệ này sang thế hệ khác qua mỗi bữa cơm gia đình.</p>
+        <div class="author">Anthony Bourdain</div>
+        <div class="role">Đầu bếp & Nhà phê bình ẩm thực nổi tiếng</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <h2>Sẵn Sàng Thưởng Thức?</h2>
+        <p>Hãy đến và trải nghiệm hương vị Việt Nam chính thống. Đặt bàn ngay hôm nay để có một bữa ăn đáng nhớ!</p>
+        <a href="#" class="hero-btn">🍽️ Đặt Bàn Ngay</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-logo">Hương Vị Việt 🇻🇳</div>
+      <ul class="footer-links">
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#menu">Thực đơn</a></li>
+        <li><a href="#features">Đặc trưng</a></li>
+        <li><a href="#cta">Đặt bàn</a></li>
+      </ul>
+      <p class="footer-copy">© 2026 Hương Vị Việt. Nấu bằng 🔥 và ❤️ bởi Khuong.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
